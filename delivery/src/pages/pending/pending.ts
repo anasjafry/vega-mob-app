@@ -10,28 +10,33 @@ import { NavController } from 'ionic-angular';
 })
 export class PendingPage {
 
-  constructor(public alerCtrl: AlertController) { }
+  constructor(public alertCtrl: AlertController) { }
 
-  doConfirm() {
-    let confirm = this.alerCtrl.create({
-      title: 'Reject Order',
-      message: 'Are you sure you want to reject this order?',
+  doPrompt() {
+    let prompt = this.alertCtrl.create({
+      title: 'Delivery Confirmation',
+      inputs: [
+        {
+          name: 'otp',
+          placeholder: 'Enter OTP'
+        },
+      ],
       buttons: [
         {
-          text: 'Disagree',
-          handler: () => {
-            console.log('Disagree clicked');
+          text: 'Cancel',
+          handler: data => {
+            console.log('Cancel clicked');
           }
         },
         {
-          text: 'Agree',
-          handler: () => {
-            console.log('Agree clicked');
+          text: 'Save',
+          handler: data => {
+            console.log('Saved clicked');
           }
         }
       ]
     });
-    confirm.present()
+    prompt.present();
   }
 
 }
