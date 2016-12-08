@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Confirmed Orders
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+<ion-card>
+
+  <ion-item>
+    <h2>Order# 121119</h2>
+    <p>Abhijith C S, +919043960876</p>
+    <ion-note>
+        11h ago
+    </ion-note>
+  </ion-item>
+
+  <ion-card-content>
+    <p>Tandoori Chicken (2), Shawarma Plate (1), Alfaham (3)</p>
+  </ion-card-content>
+
+  <ion-row>
+    <ion-col center text-center>
+      
+      <button ion-button icon-left clear small (click)="doConfirm()">
+        <ion-icon name="md-close-circle"></ion-icon>
+        <div>Cancel Order</div>
+      </button>
+
+    </ion-col>
+    <ion-col>
+      <button ion-button icon-left clear small (click)="doRadio()">
+        <ion-icon name="md-checkmark-circle-outline"></ion-icon>
+        <div>Deliver order</div>
+      </button>
+    </ion-col>
+  </ion-row>
+
+</ion-card>
+
+</ion-content>

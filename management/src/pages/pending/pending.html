@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Pending Orders</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<a>
+<ion-card>
+
+  <ion-item>
+    <h2>Order# 112233</h2>
+    <p>Abhijith C S, +919043960876</p>
+    <ion-note>
+        11h ago
+    </ion-note>
+  </ion-item>
+
+  <ion-card-content>
+    <p>Shawarma (3)</p>
+    <p>Rs.690</p>
+  </ion-card-content>
+
+  <ion-row>
+    <ion-col center text-center>
+      <button ion-button icon-left clear small (click)="doConfirm()">
+        <ion-icon name="thumbs-down"></ion-icon>
+        <div>Reject Order</div>
+      </button>
+    </ion-col>
+    <ion-col>
+      <button ion-button icon-left clear small>
+        <ion-icon name="thumbs-up"></ion-icon>
+        <div>Confirm order</div>
+      </button>
+    </ion-col>
+  </ion-row>
+
+</ion-card>
+</a>
+
+</ion-content>
