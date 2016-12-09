@@ -5,7 +5,7 @@
 </ion-header>
 
 <ion-content padding>
-<a>
+
 <ion-card>
 
   <ion-item>
@@ -23,13 +23,14 @@
 
   <ion-row>
     <ion-col center text-center>
+  
       <button ion-button icon-left clear small (click)="doConfirm()">
         <ion-icon name="thumbs-down"></ion-icon>
-        <div>Reject Order</div>
+        <div>Reject Order</div>s
       </button>
     </ion-col>
     <ion-col>
-      <button ion-button icon-left clear small>
+      <button ion-button icon-left clear small (click)="doPrompt()">
         <ion-icon name="thumbs-up"></ion-icon>
         <div>Confirm order</div>
       </button>
@@ -37,6 +38,6 @@
   </ion-row>
 
 </ion-card>
-</a>
+
 
 </ion-content>

@@ -9,8 +9,8 @@
 <ion-content>
   <ion-item-group>
     <ion-item-divider color="light">Admin Features</ion-item-divider>
-    <a href="#"><ion-item><ion-icon name="md-cart" item-left></ion-icon>Order History</ion-item></a>
-    <a href="#"><ion-item><ion-icon name="search" item-left></ion-icon>User Search</ion-item></a>
+    <a (click)="SecondPage()"><ion-item><ion-icon name="md-cart" item-left></ion-icon>Order History</ion-item></a>
+    <a (click)="SearchPage()"><ion-item><ion-icon name="search" item-left></ion-icon>User Search</ion-item></a>
   </ion-item-group>
   <ion-item-group>
     <ion-item-divider color="light">Information</ion-item-divider>
@@ -19,6 +19,6 @@
   </ion-item-group>
   <ion-item-group>
     <ion-item-divider color="light">Actions</ion-item-divider>
-    <a href="#"><ion-item><ion-icon name="md-power" item-left></ion-icon>Logout</ion-item></a>
+    <a><ion-item><ion-icon name="md-power" item-left></ion-icon>Logout</ion-item></a>
   </ion-item-group>
 </ion-content>
