@@ -7,6 +7,7 @@ import { PendingPage } from '../pages/pending/pending';
 import { TabsPage } from '../pages/tabs/tabs';
 import { VieworderPage } from '../pages/vieworder/vieworder';
 import { SearchPage } from '../pages/search/search';
+import { SearchdetailsPage } from '../pages/searchdetails/searchdetails';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { SearchPage } from '../pages/search/search';
     ConfirmedPage,
     VieworderPage,
     SearchPage,
+    SearchdetailsPage,
     TabsPage
   ],
   imports: [
@@ -29,6 +31,7 @@ import { SearchPage } from '../pages/search/search';
     ConfirmedPage,
     VieworderPage,
     SearchPage,
+    SearchdetailsPage,
     TabsPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]

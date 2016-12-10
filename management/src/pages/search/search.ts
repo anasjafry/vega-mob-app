@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { SearchdetailsPage } from '../searchdetails/searchdetails';
 import { NavController } from 'ionic-angular';
 
 @Component({
@@ -10,7 +10,7 @@ export class SearchPage {
 
   items;
 
-  constructor() {
+  constructor(public navCtrl: NavController) {
     this.initializeItems();
   }
 
@@ -69,5 +69,9 @@ export class SearchPage {
         return (item.toLowerCase().indexOf(val.toLowerCase()) > -1);
       })
     }
+  }
+
+  searchdetails() {
+    this.navCtrl.push(SearchdetailsPage);
   }
 }
